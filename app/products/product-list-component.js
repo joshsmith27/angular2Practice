@@ -14,13 +14,11 @@ var product_service_1 = require("./product.service");
 var ProductListComponent = (function () {
     function ProductListComponent(_productService) {
         this._productService = _productService;
-        this.pageTitle = "Product List";
+        this.pageTitle = 'Product List';
         this.imageWidth = 50;
         this.imageMargin = 2;
         this.showImage = false;
-        this.products = [];
     }
-    ;
     ProductListComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;
     };
@@ -36,10 +34,8 @@ var ProductListComponent = (function () {
 }());
 ProductListComponent = __decorate([
     core_1.Component({
-        selector: 'pm-products',
-        moduleId: module.id,
-        templateUrl: 'product-list-component.html',
-        styleUrls: ['product-list.component.css']
+        templateUrl: 'app/products/product-list.component.html',
+        styleUrls: ['app/products/product-list.component.css']
     }),
     __metadata("design:paramtypes", [product_service_1.ProductService])
 ], ProductListComponent);
